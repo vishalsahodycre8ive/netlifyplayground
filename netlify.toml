@@ -4,3 +4,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/.netlify/functions/jokes"
+  status = 200
+  force = true
