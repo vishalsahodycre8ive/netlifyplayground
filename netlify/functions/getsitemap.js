@@ -4,7 +4,7 @@ const API_ENDPOINT = "https://bookeasy.visitcanberra.siteinprod.com.au/sitemap.x
 
 exports.handler = async (event, context) => {
   return fetch(API_ENDPOINT, { headers: { Accept: "utf8" } })
-    .then((response) => response.json())
+    .then((response) => response.xml())
     .then((data) => ({
       statusCode: 200,
       body: data.joke,
