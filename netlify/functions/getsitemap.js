@@ -1,6 +1,7 @@
 const fetch = require("node-fetch");
 
-const API_ENDPOINT = "https://bookeasy.visitcanberra.siteinprod.com.au/sitemap.xml";
+// const API_ENDPOINT = "https://bookeasy.visitcanberra.siteinprod.com.au/sitemap.xml";
+const API_ENDPOINT = "https://vcms.visitcanberra.com.au/sitemap.xml";
 
 exports.handler = async (event, context) => {
   return fetch(API_ENDPOINT, { headers: { Accept: "utf8" } })
